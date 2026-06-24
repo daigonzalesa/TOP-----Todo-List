@@ -1,0 +1,24 @@
+{
+  "name": "top-----todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daigonzalesa/TOP-----Todo-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daigonzalesa/TOP-----Todo-List/issues"
+  },
+  "homepage": "https://github.com/daigonzalesa/TOP-----Todo-List#readme",
+  "devDependencies": {
+    "webpack": "^5.107.2",
+    "webpack-cli": "^7.0.3"
+  }
+}
