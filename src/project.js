@@ -1,5 +1,5 @@
 
-export default class myProject {
+export default class MyProject {
     constructor (nameProject) {
         this.nameProject = nameProject;
         this.listTasks=[];
