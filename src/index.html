@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
+    <script src="https://kit.fontawesome.com/81af46130b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>To Do List</h1>
+    <main>
+        <div id="project-panel">
 
-    <div id="project-panel">
-        <button id="project-btn">New Project</button>
+            <h1>My ToDo List</h1>
 
-        <dialog id="project-modal">
+            <button id="project-btn">
+                 <i class="fa-solid fa-plus"></i>
+                Add Project
+            </button>
+
+            <div id="projects-view"></div>
+
+            <dialog id="project-modal">
             <form id="project-form" method="dialog">
                 <h2>New Project</h2>
                 <input type="text" id="project-name" placeholder="eg. Chores" required>
@@ -20,14 +28,44 @@
                     <button type="button" class="close-btn">Cancel</button>
                 </div>
             </form>
-        </dialog>
+            </dialog>
 
-    </div>
+        </div>
 
-    <div id="task-panel">
-        <button id="task-btn">New Task</button>
+        <div id="task-panel">
 
-        <dialog id="task-modal">
+            <div id="task-controls">
+
+                <button id="date-btn">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    Sort by Date
+                </button>
+
+                <button id="priority-btn">
+                    <i class="fa-solid fa-arrow-up-wide-short"></i>
+                    Sort by Priority
+                </button>
+
+                <button id="clear-btn">
+                    <i class="fa-solid fa-check-double"></i>
+                    Delete Completed 
+                </button>
+            
+                <button id="task-btn">
+                     <i class="fa-solid fa-plus"></i>
+                    Add Task
+                </button>
+            </div>
+            
+            <h2 id="current-project-title"></h2>
+            
+            <div id="task-manager">
+            </div>
+
+             
+
+
+            <dialog id="task-modal">
             <form id="task-form" method="dialog">
                 <h2>New Task</h2>
 
@@ -47,6 +85,7 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="priority">Priority:</label>
                     <select id="priority" name="task-priority">
                         <option value="High">High</option>
                         <option value="Medium">Medium</option>
@@ -60,9 +99,10 @@
                     <button type="button" class="close-btn">Cancel</button>
                 </div>
             </form>
-        </dialog>
+            </dialog>
 
-    </div>
+        </div>
+    </main>
 
 </body>
 </html>

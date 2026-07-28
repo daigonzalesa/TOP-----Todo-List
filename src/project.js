@@ -10,13 +10,14 @@ export default class MyProject {
         return this.listTasks;
     }
     
-    addTask(Task) {
-        this.listTasks.push(Task);
+    addTask(task) {
+        this.listTasks.push(task);
     }
 
     deleteTask(taskId) {
         this.listTasks = this.listTasks.filter (task => task.ID !== taskId )
     }
+
 
 }
 
